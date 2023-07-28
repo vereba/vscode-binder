@@ -20,6 +20,8 @@ def setup_vscode():
             "none",
             "--disable-telemetry",
             "--port=" + str(port),
+            "--trusted-origins",
+            "*",
         ]
 
         if extensions_dir:
